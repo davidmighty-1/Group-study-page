@@ -1,0 +1,128 @@
+.body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 3vh; /*MAIN TEXT SIZE*/
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.9em;
+  color: #666;
+}
+.img1, .img2, .img3 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*change to "scroll" if you want to remove it (fixed=parallax, scroll=normal)*/
+}
+.img1 {
+  background-image:url("https://dl.dropboxusercontent.com/s/1s864gw9xzh7qm2/janfillem-626162-unsplash.jpg?dl=0");
+  min-height: 800px;
+}
+.img2 {
+  background-image:url("https://dl.dropboxusercontent.com/s/6lxcmes8t16qpaz/kai-oberhauser-57364-unsplash.jpg?dl=0");
+  min-height: 400px;
+}
+.img3 { 
+  background-image:url("https://dl.dropboxusercontent.com/s/37wyrxnqsec1afh/steve-enoch-721402-unsplash.jpg?dl=0");
+  min-height: 400px;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+}
+
+.horizontal {
+    grid-column: span 3;
+}
+
+.vertical {
+    grid-row: span 4;
+    grid-column: span 2;
+}
+
+.big {
+    grid-column: span 3;
+    grid-row: span 3;
+}
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.big:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition-duration: 2s;
+}
+.vertical:hover {
+  transform: scale(2);
+  transition-duration: 2s;
+}
+.horizontal:hover {
+  transform: scale(2);
+  transition-duration: 2s;
+}
+.small:hover {
+  transform: scale(3);
+  transition-duration: 2s;
+}
+
+
+.text1 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 5vw; /*HEAD TEXT SIZE*/
+  letter-spacing: 4px;
+  color: #000;
+  text-transform: uppercase;
+}
+.text1 .border {
+  background-color: transparent; /*Change this for another color for background at the start and the end (#111)*/
+  color: #fff;
+  padding: 20px;
+}
+.text1 .border.transparent {
+  background-color: transparent;
+}
+
+.fonts-to-choose-from {
+font-family: 'Laila', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Cairo', sans-serif;
+}
